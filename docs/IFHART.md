@@ -2,11 +2,9 @@
 
 ## Общие сведения
 
-??? note "Разработка"
-    На текущий момент модуль на стадии разработки. Начало тестирования запланировано на ноябрь 2025 года
 <div class="grid cards" markdown>
 
-![Image title](img/modules/IFHART.png){ width="150" align=left  }
+![Image title](img/modules/IFHART.webp){ width="150" align=left  }
 Модуль интерфейсный HART (арт. SA-P5-IFHART) является 4-канальным модулем расширения и предназначен для приема сигналов по интерфейсу HART.
 </div>
  
@@ -40,7 +38,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/IFHART.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание      |
@@ -75,9 +73,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.webp){ width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.webp) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"
@@ -91,8 +89,6 @@ exposure="0.5"
 style="width: 100%; height: 500px;">
 </model-viewer>
 
-
 ## Файлы для скачивания
-<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>    
-<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
-<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
+
+<a href="/downloads/SA_P5.xml" download>ESI файл описания EtherCAT</a>

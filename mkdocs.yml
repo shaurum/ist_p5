@@ -23,15 +23,9 @@ theme:
  
   language: ru
   palette:
-
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Light mode
-      primary: Red
-      accent: grey 
-      
+    scheme: default
+    primary: Red
+    accent: grey
 extra_css:
   - stylesheets/extra.css
 extra:
@@ -39,7 +33,6 @@ extra:
 
 
 extra_javascript:
-  - overrides/main.js
   - path: https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js
     type: module
   - javascripts/mathjax.js

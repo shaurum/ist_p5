@@ -3,12 +3,9 @@
 
 ## Общие сведения
 
-??? note "Разработка"
-
-    На текущий момент модуль на стадии разработки. Начало тестирования запланировано на апрель 2025 года
 <div class="grid cards" markdown>
 
-![Image title](img/modules/GMR.png){ width="150" align=left  }
+![Image title](img/modules/GMR.webp){ width="150" align=left  }
 Модуль основной GM (арт. SA-P5-GMR) является центральным компонентом системы управления.
 
 </div>
@@ -56,7 +53,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/GM.svg){ width="355"; align=left  }
 
-![Image title](img/connection/connector_6pin.png){ width="180";  }
+![Image title](img/connection/connector_6pin.webp){ width="180";  }
 </div>
 
 | Обозначение | Наименование канала | Описание |
@@ -73,7 +70,7 @@
     Без подключения защитного заземления не использовать
 
 ## Индикация
-![Image title](img/identification/GM.png){ width="50" }
+![Image title](img/identification/GM.webp){ width="50" }
 
 | Обозначение | Индикация | Показатель |
 |------------------|----------------------|---------------------------------------|
@@ -95,6 +92,10 @@
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_GM.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_GM.webp){ width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions_GM.png) 
+    ![alt text](img/dimensions/installation_dimensions_GM.webp)
+
+## Файлы для скачивания
+
+<a href="/downloads/SA_P5.xml" download>ESI файл описания EtherCAT</a>

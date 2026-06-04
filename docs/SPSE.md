@@ -1,12 +1,10 @@
 # Модуль расширения коммутации SA-P5-SPSE
 
 ## Общие сведения
-??? note "Разработка"
-    На текущий момент модуль на стадии разработки. Начало тестирования запланировано на апрель 2026 года
 
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPSE.png){ width="150" align=left  }
+![Image title](img/modules/SPSE.webp){ width="150" align=left  }
 Модуль расширения коммутации (арт. SA-P5-SPSE) является модулем расширения и предназначен для организации сложных топологий путем разветвления соединений в системе автоматизации.  
 
 </div>
@@ -34,15 +32,15 @@
 
 ## Схема подключения
 
-![Image title](img/connection/SPSE.png){ width="250"  }
+![Image title](img/connection/SPSE.webp){ width="250"  }
 
 
 ## Размеры
 
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.webp){ width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.webp) 
 
 
 <model-viewer src="https://manual.saplc.ru//img/3d/SPTM.glb"
@@ -56,6 +54,6 @@ exposure="0.5"
 style="width: 100%; height: 500px;">
 </model-viewer>
 
-## Файлы для скачивания   
-<a href="/downloads/Module_RJ45.step" download>3D-модель</a>   
-<a href="/downloads/Module_RJ45.dwg" download>2D-модель</a>    
+## Файлы для скачивания
+
+<a href="/downloads/SA_P5.xml" download>ESI файл описания EtherCAT</a>

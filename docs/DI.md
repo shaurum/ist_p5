@@ -3,7 +3,7 @@
 ## Общие сведения
 
 <div style="display: flex; gap: 2rem; align-items: flex-start; margin: 1rem 0;">
-    <img src="img/modules/DI.png" alt="Модуль основной GMB" width="270" style="flex-shrink: 0;">
+    <img src="img/modules/DI.webp" alt="Модуль основной GMB" width="270" style="flex-shrink: 0;">
 
     <div style="flex: 1; text-align: justify;">
         <p style="text-align: justify; margin: 0 0 1rem 0;"><strong>Наименование:</strong> Модуль дискретного ввода DI</p>
@@ -139,7 +139,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/DI.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 Контакты «GND_DRY» и «GND_WET» предназначены для подключения входов по принципу «сухого» или «мокрого» контакта соответственно.
@@ -306,155 +306,14 @@ style="width: 100%; height: 500px;">
 ### Принцип работы
 Модуль передаёт информацию о состоянии 16 каналов с помощью двух специальных сообщений TxPDO: "Byte_Lo" (0x1A00, PDO entry 0x6000:01) — для каналов 1–8, и "Byte_Hi" (0x1A08, PDO entry 0x6080:01) — для каналов 9–16, где каждый бит отражает состояние соответствующего канала (0 — выключен, 1 — включен).
 Структура PDO:  
-<div class="channels-container">
-    <div class="byte-group">
-        <h4> Byte_Lo - Каналы 1-8</h4>
-        <div class="channels-grid">
-            <div class="channel-item">
-                <span class="channel-name">Channel 1</span>
-                <span class="channel-bit">Бит 0</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 2</span>
-                <span class="channel-bit">Бит 1</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 3</span>
-                <span class="channel-bit">Бит 2</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 4</span>
-                <span class="channel-bit">Бит 3</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 5</span>
-                <span class="channel-bit">Бит 4</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 6</span>
-                <span class="channel-bit">Бит 5</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 7</span>
-                <span class="channel-bit">Бит 6</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 8</span>
-                <span class="channel-bit">Бит 7</span>
-            </div>
-        </div>
-    </div>
-    
-    <div class="byte-group">
-        <h4> Byte_Hi - Каналы 9-16</h4>
-        <div class="channels-grid">
-            <div class="channel-item">
-                <span class="channel-name">Channel 9</span>
-                <span class="channel-bit">Бит 0</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 10</span>
-                <span class="channel-bit">Бит 1</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 11</span>
-                <span class="channel-bit">Бит 2</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 12</span>
-                <span class="channel-bit">Бит 3</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 13</span>
-                <span class="channel-bit">Бит 4</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 14</span>
-                <span class="channel-bit">Бит 5</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 15</span>
-                <span class="channel-bit">Бит 6</span>
-            </div>
-            <div class="channel-item">
-                <span class="channel-name">Channel 16</span>
-                <span class="channel-bit">Бит 7</span>
-            </div>
-        </div>
-    </div>
-</div>
 
-<style>
-.channels-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin: 20px 0;
-}
 
-.byte-group {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #e9ecef;
-}
-
-.byte-group h4 {
-    margin-top: 0;
-    color: #495057;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 8px;
-}
-
-.channels-grid {
-    display: grid;
-    gap: 8px;
-}
-
-.channel-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    background: white;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    transition: all 0.2s;
-}
-
-.channel-item:hover {
-    background: #e7f3ff;
-    border-color: #007acc;
-}
-
-.channel-name {
-    font-weight: 500;
-    color: #212529;
-}
-
-.channel-bit {
-    color: #6c757d;
-    font-size: 0.9em;
-    background: #e9ecef;
-    padding: 2px 8px;
-    border-radius: 12px;
-}
-
-@media (max-width: 768px) {
-    .channels-container {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
-
-**Пример конфигурации** 
+**Пример конфигурации**
 
 Получить через TxPDO 0x1a00 значение 0x05 (00000101 в двоичной системе), что означает активность Channel 1 и Channel 3, и через TxPDO 0x1a08 значение 0x0A (00001010 в двоичной системе), что означает активность Channel 10 и Channel 12  
 
 Результат: Каналы 1, 3, 10 и 12 активны (включены), остальные — выключены
 
-
 ## Файлы для скачивания
-<a href="/downloads/SA_P5.xml" download>XML конфигурационный файл для TwinCAT</a>      
-<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
-<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
+
+<a href="/downloads/SA_P5.xml" download>ESI файл описания EtherCAT</a>

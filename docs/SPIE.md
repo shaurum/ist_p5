@@ -2,13 +2,9 @@
 
 ## Общие сведения
 
-??? example "Тестирование"
-
-    На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
-
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPIE.png){ width="150" align=left  }
+![Image title](img/modules/SPIE.webp){ width="150" align=left  }
 Модуль SPPE является 4-х канальным модулем расширения, предназначенным для подключения инкрементальных энкодеров с выходами типа A, B.
 </div>
 
@@ -38,7 +34,7 @@
 <div class="grid cards" markdown>
 ![Image title](img/connection/SPIE.svg){ width="370"; align=left  }
 
-![Image title](img/connection/connector_18pin.png){ width="170";  }
+![Image title](img/connection/connector_18pin.webp){ width="170";  }
 </div>
 
 | Обозначение | Наименование канала | Описание                         |
@@ -75,9 +71,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](img/dimensions/overall_dimensions_extensions.webp){ width="580"}
 === "Установочные размеры"
-    ![alt text](img/dimensions/installation_dimensions.png) 
+    ![alt text](img/dimensions/installation_dimensions.webp) 
 
 ## 3D-модель
 <model-viewer src="https://manual.saplc.ru//img/3d/DI.glb"
@@ -149,15 +145,6 @@ PDO используются для передачи данных в реаль�
 Получить текущее значение счётчика Channel 1 через TxPDO (например, -12345 импульсов). 
 Это значение говорит о том, что энкодер был повернут против часовой стрелки на 12345 шагов.
 
-
-
 ## Файлы для скачивания
-<a href="/downloads/IPCSA_OG.xml" download>XML конфигурационный файл для TwinCAT</a>      
-<a href="/downloads/Module_18_pin.step" download>3D-модель</a>   
-<a href="/downloads/Module_18_pin.dwg" download>2D-модель</a>    
 
-
-
-
-
-
+<a href="/downloads/SA_P5.xml" download>ESI файл описания EtherCAT</a>

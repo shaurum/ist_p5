@@ -2,12 +2,9 @@
 
 ## Общие сведения
 
-??? example "Тестирование"
-    На текущий момент модуль на стадии тестирования. Серийный выпуск запланирован на декабрь 2025 года 
-
 <div class="grid cards" markdown>
 
-![Image title](img/modules/SPTM.png){ width="250" align=left  }
+![Image title](img/modules/SPTM.webp){ width="250" align=left  }
 Модуль оконечный (SPTM) (арт. SA-P5-SPTM) является модулем расширения и предназначен для перехода с внутренней шины на внешнюю шину Ethernet через порт RJ-45.
 Модуль используется для подключения последующих групп модулей и ставится как в конце, так и в начале каждой группы.
 </div>
@@ -35,9 +32,9 @@
 | Расположение при монтаже         | Вертикальное       |
 
 ## Схема подключения
-![Image title](img/connection/SPTM_1.png){ width="250"  }
-![Image title](img/connection/SPTM_2.png){ width="260" }
-![Image title](img/connection/SPTM_3.png){ width="290"  }
+![Image title](img/connection/SPTM_1.webp){ width="250"  }
+![Image title](img/connection/SPTM_2.webp){ width="260" }
+![Image title](img/connection/SPTM_3.webp){ width="290"  }
 
 ???+ danger "Использовать только первым или полседним в группе"
     Использовать в качестве модуля расширения запрещено! Воспользуйтесь [модулем расширения коммутации](SPSE.md)
@@ -47,9 +44,9 @@
 
 ## Размеры
 === "Габаритные размеры" 
-    ![Image title](../img/dimensions/overall_dimensions_extensions.png){ width="580"}
+    ![Image title](../img/dimensions/overall_dimensions_extensions.webp){ width="580"}
 === "Установочные размеры"
-    ![alt text](../img/dimensions/installation_dimensions.png) 
+    ![alt text](../img/dimensions/installation_dimensions.webp) 
 
 <model-viewer src="https://manual.saplc.ru//img/3d/SPTM.glb"
 alt="3D Model"
@@ -62,6 +59,6 @@ exposure="0.5"
 style="width: 100%; height: 500px;">
 </model-viewer>
 
-## Файлы для скачивания   
-<a href="/downloads/Module_RJ45.step" download>3D-модель</a>   
-<a href="/downloads/Module_RJ45.dwg" download>2D-модель</a>    
+## Файлы для скачивания
+
+<a href="/downloads/SA_P5.xml" download>ESI файл описания EtherCAT</a>
